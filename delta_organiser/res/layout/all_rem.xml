@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@drawable/bg" 
+    android:weightSum="100"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tvDATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATE"
+        android:textStyle="bold"
+        android:layout_weight="30" />
+
+    <TextView
+        android:id="@+id/tvTIME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIME" 
+        android:textStyle="bold"
+        android:layout_weight="30" />
+    <TextView
+        android:id="@+id/tvEVENT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EVENT" 
+        android:textStyle="bold"
+        android:layout_weight="40" />
+</LinearLayout>
+    <ListView
+        android:id="@+id/lvAllRem"
+        android:layout_width="match_parent"
+        android:layout_height="367dp" >
+    </ListView>
+    
+</LinearLayout>

@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main" >
+	
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/prevMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/move_left" />
+        <TextView 
+            android:id="@+id/currentMonth"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="No Text"/>"
+
+        <ImageView
+            android:id="@+id/nextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/move_right" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:gravity="center"
+        android:weightSum="70"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:layout_weight="10"
+            android:id="@+id/Button1"            
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/tile" 
+            android:text="Sun"/>
+
+        <Button
+            android:layout_weight="10"
+            android:id="@+id/Button2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/tile"
+            android:text="Mon"/>
+
+        <Button
+            android:layout_weight="10"
+            android:id="@+id/Button3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/tile"
+            android:text="Tue"/>
+
+        <Button
+            android:layout_weight="10"
+            android:id="@+id/Button4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/tile"
+            android:text="Wed"/>
+
+        <Button
+            android:layout_weight="10"
+            android:id="@+id/Button5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/tile"
+            android:text="Thu"/>
+
+        <Button
+            android:layout_weight="10"
+            android:id="@+id/Button6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/tile"
+            android:text="Fri"/>
+
+        <Button
+            android:layout_weight="10"
+            android:id="@+id/Button7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/tile"
+            android:text="Sat"/>
+        
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7" >
+    </GridView>
+    
+    <GridView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7" >
+    </GridView>
+
+</LinearLayout>

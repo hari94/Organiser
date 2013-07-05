@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/date"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="Event"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="80" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Event Description"
+        android:paddingTop="10dp"
+         />
+    
+    <EditText
+        android:id="@+id/etdesc"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textSize="15dp"
+         />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp" 
+        android:orientation="horizontal"
+         android:paddingBottom="30dp">
+
+    <Button
+        android:id="@+id/changeTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Time" />
+	
+    <TextView
+        android:id="@+id/setTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="00:00"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+	<Button
+        android:id="@+id/addRem"
+        style="?android:attr/buttonStyleSmall"
+        android:gravity="center"
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Reminders" />
+    
+    <Button
+        android:id="@+id/viewRem"
+        style="?android:attr/buttonStyleSmall"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Reminders" />
+    
+</LinearLayout>
